@@ -3,7 +3,7 @@ code size summary per package:
 attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:47258
 base:                    466252
 bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU:1605
-calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA:302869
+calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA:315794
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:124464
 dependent-map-0.2.3.0-Ka3E5f3fAWhHOMudpP0wfb:102988
 dependent-sum-0.3.2.2-7nS29TvovqDNS76jfcaer:3341
@@ -105,11 +105,11 @@ bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU
 
 calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA
     Calculator.Evaluation:              4389
-    Calculator.Parsing:                 49852
+    Calculator.Parsing:                 65519
     Calculator.Printing:                83476
     Calculator.Tokens:                  1104
     Calculator.Types:                   34054
-    Calculator.WebInterface:            129994
+    Calculator.WebInterface:            127252
 
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz
     Data.IntMap.Base:                   25679
@@ -213,5 +213,5 @@ transformers-0.5.2.0-Lvs3wlJMkpyLRFNHJ8pmeB
 
 
 
-packed metadata: 603392
+packed metadata: 606557
 

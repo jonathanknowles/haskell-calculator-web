@@ -133639,7 +133639,7 @@ function h$$bzI()
   h$l4(c.d2, d, b, h$calculatorzm0zi1zi0zi0zmFoNgeu7B87Q6X3Uq4v0HeAZCCalculatorziWebInterfacezizdwg);
   return h$ap_3_3_fast();
 };
-var h$$calculatorzm0zi1zi0zi0zmFoNgeu7B87Q6X3Uq4v0HeAZCCalculatorziWebInterface_jL = h$str("* {font-size: 12pt; font-family: 'Ubuntu', 'Lato', sans-serif}");
+var h$$calculatorzm0zi1zi0zi0zmFoNgeu7B87Q6X3Uq4v0HeAZCCalculatorziWebInterface_jL = h$str("* {font-size: 12pt; font-family: sans-serif}");
 function h$calculatorzm0zi1zi0zi0zmFoNgeu7B87Q6X3Uq4v0HeAZCCalculatorziWebInterfacezicss58_e()
 {
   var a = h$r1.d1;
@@ -134693,7 +134693,7 @@ function h$calculatorzm0zi1zi0zi0zmFoNgeu7B87Q6X3Uq4v0HeAZCCalculatorziWebInterf
   h$r1 = a;
   return h$ap_1_2_fast();
 };
-var h$$calculatorzm0zi1zi0zi0zmFoNgeu7B87Q6X3Uq4v0HeAZCCalculatorziWebInterface_mf = h$str("https:\/\/fonts.googleapis.com\/css?family=Ubuntu|Lato");
+var h$$calculatorzm0zi1zi0zi0zmFoNgeu7B87Q6X3Uq4v0HeAZCCalculatorziWebInterface_mf = h$str("https:\/\/fonts.googleapis.com\/css?family=Lato");
 function h$calculatorzm0zi1zi0zi0zmFoNgeu7B87Q6X3Uq4v0HeAZCCalculatorziWebInterfaceziheadSection6_e()
 {
   var a = h$r1.d1;

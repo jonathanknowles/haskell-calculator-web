@@ -2,7 +2,7 @@ code size summary per package:
 
 attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:45023
 base:                    370487
-calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA:321944
+calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA:321942
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:133959
 dependent-map-0.2.3.0-Ka3E5f3fAWhHOMudpP0wfb:102988
 dependent-sum-0.3.2.2-7nS29TvovqDNS76jfcaer:3341
@@ -102,7 +102,7 @@ calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA
     Calculator.Tokens:                  184
     Calculator.Types:                   34054
     Calculator.Value:                   17781
-    Calculator.WebInterface:            159857
+    Calculator.WebInterface:            159855
 
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz
     Data.IntMap.Base:                   25679

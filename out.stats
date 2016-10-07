@@ -1,23 +1,22 @@
 code size summary per package:
 
 attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:45023
-base:                    421122
-bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU:1605
-calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA:349392
-containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:124464
+base:                    370487
+calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA:388510
+containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:133959
 dependent-map-0.2.3.0-Ka3E5f3fAWhHOMudpP0wfb:102988
 dependent-sum-0.3.2.2-7nS29TvovqDNS76jfcaer:3341
 exception-transformers-0.4.0.4-FUGCtXPA3gv4cnmmMUrv76:9658
-ghc-prim:                23145
+ghc-prim:                18946
 ghcjs-base-0.2.0.0-9RAUV0fc0ApBW3Hd7VHXty:6789
 ghcjs-dom-0.2.4.0-8TojzGsEq63I8VX8VkXYBV:135818
-ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA:10712
+ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA:10708
 integer-gmp:             57393
 main:                    621
 ref-tf-0.4.0.1-3hM7hnw7bOB1FwMAOCGwpN:2151
-reflex-0.5.0-CudEVeFTJAH8ajDdcbYxWR:811633
-reflex-dom-0.4-6rbAcKUG8gZQT3WFIDxts:641859
-text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:53009
+reflex-0.5.0-CudEVeFTJAH8ajDdcbYxWR:806244
+reflex-dom-0.4-6rbAcKUG8gZQT3WFIDxts:611387
+text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:40882
 these-0.7.2-EZzbC9nbGYz4elF4fbcfRp:3020
 transformers-0.5.2.0-Lvs3wlJMkpyLRFNHJ8pmeB:14847
 
@@ -58,13 +57,13 @@ base
     Foreign.Storable:                   9380
     GHC.Base:                           8464
     GHC.Conc.Sync:                      8239
-    GHC.Enum:                           18604
+    GHC.Enum:                           4294
     GHC.Err:                            259
-    GHC.Exception:                      19748
+    GHC.Exception:                      19528
     GHC.Fingerprint:                    1459
     GHC.Fingerprint.Type:               724
     GHC.Foreign:                        12172
-    GHC.ForeignPtr:                     1679
+    GHC.ForeignPtr:                     1237
     GHC.IO:                             3504
     GHC.IO.Buffer:                      1241
     GHC.IO.BufferedIO:                  850
@@ -84,23 +83,18 @@ base
     GHC.Int:                            755
     GHC.List:                           8799
     GHC.MVar:                           174
-    GHC.Num:                            2802
+    GHC.Num:                            530
     GHC.Ptr:                            610
-    GHC.Real:                           15175
+    GHC.Real:                           6797
     GHC.STRef:                          620
-    GHC.Show:                           25605
+    GHC.Show:                           22224
     GHC.Stack.CCS:                      3971
     GHC.Stack.Types:                    1491
     GHC.Storable:                       1070
     GHC.TopHandler:                     12934
     GHC.Weak:                           174
-    GHC.Word:                           18553
-    Numeric:                            5098
+    GHC.Word:                           2019
     System.Posix.Internals:             15344
-
-bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU
-    Data.ByteString:                    1
-    Data.ByteString.Internal:           1604
 
 calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA
     Calculator.Evaluation:              5285
@@ -109,12 +103,12 @@ calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA
     Calculator.Tokens:                  1104
     Calculator.Types:                   34054
     Calculator.Value:                   17781
-    Calculator.WebInterface:            122814
+    Calculator.WebInterface:            161932
 
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz
     Data.IntMap.Base:                   25679
     Data.IntMap.Strict:                 10379
-    Data.Map.Base:                      67486
+    Data.Map.Base:                      76981
     Data.Map.Strict:                    12589
     Data.Tree:                          8331
 
@@ -131,8 +125,8 @@ exception-transformers-0.4.0.4-FUGCtXPA3gv4cnmmMUrv76
     Control.Monad.Exception:            9658
 
 ghc-prim
-    GHC.CString:                        4516
-    GHC.Classes:                        15615
+    GHC.CString:                        4494
+    GHC.Classes:                        11438
     GHC.IntWord64:                      298
     GHC.Tuple:                          753
     GHC.Types:                          1963
@@ -158,7 +152,7 @@ ghcjs-dom-0.2.4.0-8TojzGsEq63I8VX8VkXYBV
 
 ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA
     GHCJS.Prim:                         6385
-    GHCJS.Prim.Internal:                4327
+    GHCJS.Prim.Internal:                4323
 
 integer-gmp
     GHC.Integer.Type:                   57393
@@ -176,30 +170,26 @@ reflex-0.5.0-CudEVeFTJAH8ajDdcbYxWR
     Reflex.Deletable.Class:             1027
     Reflex.Dynamic:                     1767
     Reflex.Host.Class:                  2938
-    Reflex.PerformEvent.Base:           65980
+    Reflex.PerformEvent.Base:           60591
     Reflex.PerformEvent.Class:          2931
     Reflex.PostBuild.Class:             33396
     Reflex.Spider.Internal:             663127
 
 reflex-dom-0.4-6rbAcKUG8gZQT3WFIDxts
-    Foreign.JavaScript.TH:              32645
+    Foreign.JavaScript.TH:              23707
     Reflex.Dom.Builder.Class:           30353
-    Reflex.Dom.Builder.Class.Events:    139828
-    Reflex.Dom.Builder.Immediate:       284804
-    Reflex.Dom.Internal:                45806
+    Reflex.Dom.Builder.Class.Events:    139754
+    Reflex.Dom.Builder.Immediate:       284375
+    Reflex.Dom.Internal:                24775
     Reflex.Dom.Widget.Basic:            95458
     Reflex.Dom.Widget.Input:            12965
 
 text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P
     Data.Text:                          18552
     Data.Text.Array:                    1504
-    Data.Text.Encoding:                 1685
-    Data.Text.Encoding.Error:           6958
     Data.Text.Internal:                 1581
-    Data.Text.Internal.Encoding.Fusion: 1894
     Data.Text.Internal.Fusion.Common:   2190
     Data.Text.Internal.Fusion.Size:     489
-    Data.Text.Internal.Fusion.Types:    1590
     Data.Text.Show:                     16340
     Data.Text.Unsafe:                   226
 
@@ -213,5 +203,5 @@ transformers-0.5.2.0-Lvs3wlJMkpyLRFNHJ8pmeB
 
 
 
-packed metadata: 601123
+packed metadata: 583883
 

@@ -1,9 +1,9 @@
 code size summary per package:
 
-attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:47258
-base:                    467222
+attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:45023
+base:                    421122
 bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU:1605
-calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA:363460
+calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA:348939
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:124464
 dependent-map-0.2.3.0-Ka3E5f3fAWhHOMudpP0wfb:102988
 dependent-sum-0.3.2.2-7nS29TvovqDNS76jfcaer:3341
@@ -12,11 +12,11 @@ ghc-prim:                23145
 ghcjs-base-0.2.0.0-9RAUV0fc0ApBW3Hd7VHXty:6789
 ghcjs-dom-0.2.4.0-8TojzGsEq63I8VX8VkXYBV:135818
 ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA:10712
-integer-gmp:             59137
+integer-gmp:             57393
 main:                    621
 ref-tf-0.4.0.1-3hM7hnw7bOB1FwMAOCGwpN:2151
 reflex-0.5.0-CudEVeFTJAH8ajDdcbYxWR:811633
-reflex-dom-0.4-6rbAcKUG8gZQT3WFIDxts:642151
+reflex-dom-0.4-6rbAcKUG8gZQT3WFIDxts:641859
 text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:53009
 these-0.7.2-EZzbC9nbGYz4elF4fbcfRp:3020
 transformers-0.5.2.0-Lvs3wlJMkpyLRFNHJ8pmeB:14847
@@ -28,7 +28,7 @@ attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr
     Data.Attoparsec.Combinator:         907
     Data.Attoparsec.Internal:           5839
     Data.Attoparsec.Internal.Types:     1437
-    Data.Attoparsec.Text:               23952
+    Data.Attoparsec.Text:               21717
     Data.Attoparsec.Text.Buffer:        5737
     Data.Attoparsec.Text.Internal:      9386
 
@@ -60,7 +60,7 @@ base
     GHC.Conc.Sync:                      8239
     GHC.Enum:                           18604
     GHC.Err:                            259
-    GHC.Exception:                      19821
+    GHC.Exception:                      19748
     GHC.Fingerprint:                    1459
     GHC.Fingerprint.Type:               724
     GHC.Foreign:                        12172
@@ -84,7 +84,6 @@ base
     GHC.Int:                            755
     GHC.List:                           8799
     GHC.MVar:                           174
-    GHC.Natural:                        46027
     GHC.Num:                            2802
     GHC.Ptr:                            610
     GHC.Real:                           15175
@@ -104,12 +103,13 @@ bytestring-0.10.8.1-5wktHSR60zC2wTr02OpyVU
     Data.ByteString.Internal:           1604
 
 calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA
-    Calculator.Evaluation:              8048
-    Calculator.Parsing:                 105098
-    Calculator.Printing:                87939
+    Calculator.Evaluation:              5120
+    Calculator.Parsing:                 104783
+    Calculator.Printing:                63386
     Calculator.Tokens:                  1104
     Calculator.Types:                   34054
-    Calculator.WebInterface:            127217
+    Calculator.Value:                   17768
+    Calculator.WebInterface:            122724
 
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz
     Data.IntMap.Base:                   25679
@@ -161,7 +161,7 @@ ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA
     GHCJS.Prim.Internal:                4327
 
 integer-gmp
-    GHC.Integer.Type:                   59137
+    GHC.Integer.Type:                   57393
 
 main
     Main:                               621
@@ -185,7 +185,7 @@ reflex-dom-0.4-6rbAcKUG8gZQT3WFIDxts
     Foreign.JavaScript.TH:              32645
     Reflex.Dom.Builder.Class:           30353
     Reflex.Dom.Builder.Class.Events:    139828
-    Reflex.Dom.Builder.Immediate:       285096
+    Reflex.Dom.Builder.Immediate:       284804
     Reflex.Dom.Internal:                45806
     Reflex.Dom.Widget.Basic:            95458
     Reflex.Dom.Widget.Input:            12965
@@ -213,5 +213,5 @@ transformers-0.5.2.0-Lvs3wlJMkpyLRFNHJ8pmeB
 
 
 
-packed metadata: 610299
+packed metadata: 601038
 

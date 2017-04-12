@@ -1,8 +1,8 @@
 code size summary per package:
 
 attoparsec-0.13.1.0-FMbTiXvue1s3ZYBlEX83Hr:45023
-base:                    370487
-calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA:322542
+base:                    370594
+calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA:326542
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz:133959
 dependent-map-0.2.3.0-Ka3E5f3fAWhHOMudpP0wfb:102988
 dependent-sum-0.3.2.2-7nS29TvovqDNS76jfcaer:3341
@@ -13,10 +13,10 @@ ghcjs-dom-0.2.4.0-8TojzGsEq63I8VX8VkXYBV:135818
 ghcjs-prim-0.1.0.0-IFhsWclGfLr1HfhUvIVylA:10708
 integer-gmp:             57393
 main:                    621
-ref-tf-0.4.0.1-3hM7hnw7bOB1FwMAOCGwpN:2151
-reflex-0.5.0-CudEVeFTJAH8ajDdcbYxWR:806244
-reflex-dom-0.4-6rbAcKUG8gZQT3WFIDxts:611387
-text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:40882
+ref-tf-0.4.0.1-3hM7hnw7bOB1FwMAOCGwpN:1286
+reflex-0.5.0-CudEVeFTJAH8ajDdcbYxWR:778384
+reflex-dom-0.4-6rbAcKUG8gZQT3WFIDxts:595283
+text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P:39581
 these-0.7.2-EZzbC9nbGYz4elF4fbcfRp:3020
 transformers-0.5.2.0-Lvs3wlJMkpyLRFNHJ8pmeB:14847
 
@@ -81,7 +81,7 @@ base
     GHC.IO.Unsafe:                      370
     GHC.IORef:                          159
     GHC.Int:                            755
-    GHC.List:                           8799
+    GHC.List:                           8906
     GHC.MVar:                           174
     GHC.Num:                            530
     GHC.Ptr:                            610
@@ -102,7 +102,8 @@ calculator-0.1.0.0-FoNgeu7B87Q6X3Uq4v0HeA
     Calculator.Tokens:                  184
     Calculator.Types:                   34054
     Calculator.Value:                   17781
-    Calculator.WebInterface:            160455
+    Calculator.WebInterface:            158224
+    Reflex.Dom.Extras:                  6231
 
 containers-0.5.7.1-9AY76Rzb1QLJmP8p4wSZRz
     Data.IntMap.Base:                   25679
@@ -160,7 +161,7 @@ main
     Main:                               621
 
 ref-tf-0.4.0.1-3hM7hnw7bOB1FwMAOCGwpN
-    Control.Monad.Ref:                  2151
+    Control.Monad.Ref:                  1286
 
 reflex-0.5.0-CudEVeFTJAH8ajDdcbYxWR
     Data.Functor.Misc:                  1278
@@ -169,26 +170,25 @@ reflex-0.5.0-CudEVeFTJAH8ajDdcbYxWR
     Reflex.Deletable.Class:             1027
     Reflex.Dynamic:                     1767
     Reflex.Host.Class:                  2938
-    Reflex.PerformEvent.Base:           60591
+    Reflex.PerformEvent.Base:           32731
     Reflex.PerformEvent.Class:          2931
     Reflex.PostBuild.Class:             33396
     Reflex.Spider.Internal:             663127
 
 reflex-dom-0.4-6rbAcKUG8gZQT3WFIDxts
-    Foreign.JavaScript.TH:              23707
+    Foreign.JavaScript.TH:              5601
     Reflex.Dom.Builder.Class:           30353
-    Reflex.Dom.Builder.Class.Events:    139754
+    Reflex.Dom.Builder.Class.Events:    139742
     Reflex.Dom.Builder.Immediate:       284375
     Reflex.Dom.Internal:                24775
-    Reflex.Dom.Widget.Basic:            95458
+    Reflex.Dom.Widget.Basic:            97472
     Reflex.Dom.Widget.Input:            12965
 
 text-1.2.2.1-K5kKypz1wJJhsTy1Ol15P
     Data.Text:                          18552
     Data.Text.Array:                    1504
     Data.Text.Internal:                 1581
-    Data.Text.Internal.Fusion.Common:   2190
-    Data.Text.Internal.Fusion.Size:     489
+    Data.Text.Internal.Fusion.Common:   1378
     Data.Text.Show:                     16340
     Data.Text.Unsafe:                   226
 
@@ -202,5 +202,5 @@ transformers-0.5.2.0-Lvs3wlJMkpyLRFNHJ8pmeB
 
 
 
-packed metadata: 580392
+packed metadata: 563796
 

@@ -3399,13 +3399,6 @@ h$Set.prototype.size = function() {
     return this._size;
 }
 h$Set.prototype.add = function(o) {
-    if((typeof o !== 'object' && typeof o !== 'function') || typeof o._key !== 'number') throw ("h$Set.add: invalid element: " + o);
-    if(this._size > 0) {
-//        if(this._storedProto !== o.prototype) throw ("h$Set.add: unexpected element prototype: " + o)
-    } else {
-        this._storedProto = o.prototype;
-    }
-    if(this._keys[o._key] !== undefined && this._vals[this._keys[o._key]] !== o) throw ("h$Set.add: duplicate key: " + o);
     var k = this._keys, v = this._vals;
     if(k[o._key] === undefined) {
         k[o._key] = this._size;
@@ -3492,13 +3485,6 @@ h$Map.prototype.size = function() {
     return this._size;
 }
 h$Map.prototype.put = function(k,v) {
-    if((typeof k !== 'object' && typeof k !== 'function') || typeof k._key !== 'number') throw ("h$Map.add: invalid key: " + k);
-    if(this._size > 0) {
-        if(this._storedProto !== k.prototype) throw ("h$Map.add: unexpected key prototype: " + k)
-    } else {
-        this._storedProto = k.prototype;
-    }
-    if(this._keys[k._key] !== undefined && this._pairsKeys[this._keys[k._key]] !== k) throw ("h$Map.add: duplicate key: " + k);
     var ks = this._keys, pk = this._pairsKeys, pv = this._pairsValues, x = ks[k._key];
     if(x === undefined) {
         var n = this._size++;
@@ -3658,13 +3644,6 @@ h$HeapSet.prototype.size = function() {
 }
 // add a node, if it already exists, it's moved to the new priority
 h$HeapSet.prototype.add = function(op,o) {
-    if((typeof o !== 'object' && typeof o !== 'function') || typeof o._key !== 'number') throw ("h$HeapSet.add: invalid element: " + o);
-    if(this._size > 0) {
-        if(this._storedProto !== o.prototype) throw ("h$HeapSet.add: unexpected element prototype: " + o)
-    } else {
-        this._storedProto = o.prototype;
-    }
-    if(this._keys[o._key] !== undefined && this._vals[this._keys[o._key]] !== o) throw ("h$Set.add: duplicate key: " + o);
     var p = this._prios, k = this._keys, v = this._vals, x = k[o._key];
     if(x !== undefined) { // adjust node
         var oop = p[x];
@@ -7023,14 +7002,14 @@ function h$writePtrPtrU32(ptr, ptr_off, v, x, y) {
   x = x || 0;
   y = y || 0;
   var arr = ptr.arr[ptr_off + 4 * x];
-  arr[0].dv.putInt32(arr[1] + y, v);
+  arr[0].dv.setInt32(arr[1] + y, v);
 }
 // unsigned char** ptr[x][y] = v
 function h$writePtrPtrU8(ptr, ptr_off, v, x, y) {
   x = x || 0;
   y = y || 0;
   var arr = ptr.arr[ptr_off+ 4 * x];
-  arr[0].dv.putUint8(arr[1] + y, v);
+  arr[0].dv.setUint8(arr[1] + y, v);
 }
 // convert JavaScript String to a Haskell String
 function h$toHsString(str) {
@@ -7745,11 +7724,15 @@ function h$resumeDelayThread() {
   return h$rs(); // stack[h$sp];
 }
 function h$yield() {
-  h$sp += 2;
-  h$stack[h$sp-1] = h$r1;
-  h$stack[h$sp] = h$return;
-  h$currentThread.sp = h$sp;
-  return h$reschedule;
+  if(h$currentThread.isSynchronous) {
+    return h$stack[h$sp];
+  } else {
+    h$sp += 2;
+    h$stack[h$sp-1] = h$r1;
+    h$stack[h$sp] = h$return;
+    h$currentThread.sp = h$sp;
+    return h$reschedule;
+  }
 }
 // raise the async exception in the thread if not masked
 function h$killThread(t, ex) {
@@ -8121,7 +8104,16 @@ function h$startMainLoop() {
             h$mainLoopImmediate = setImmediate(h$mainLoop);
         }
     } else {
-        while(true) h$mainLoop();
+      while(true) {
+        // the try/catch block appears to prevent a crash with
+        // Safari on iOS 10, even though this path is never taken
+        // in a browser.
+        try {
+          h$mainLoop();
+        } catch(e) {
+          throw e;
+        }
+      }
     }
 }
 var h$busyYield = 500;
